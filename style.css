@@ -1,0 +1,375 @@
+
+#jsImg{
+    width: 100px;
+}
+#hacktiv8Img{
+    width: 200px;padding-bottom: 21px;
+    margin-left: 20px;
+}
+#welcomeText{
+    font-size: 16pt;
+    color:white;
+}
+#modeContainer{
+    float:right;
+    margin-right: 1%;
+}
+#dice{
+    color: white;
+    width: 29%;
+    margin-top: 2%;
+    display: none;
+    filter: invert(1);
+}
+#diceNumber{
+    margin-left: 3%;
+    font-size: 16pt;
+    color:white;
+}
+#backToHome{
+    margin-left: 1%;
+    margin-top: 1%;
+}
+#modeText{
+    color: white;
+    vertical-align: middle;
+    vertical-align: sub;
+}
+#cheatContainer{
+    float: right;
+    margin-right: 42%;
+}
+#noteText{
+    font-size: 14pt;
+    border-bottom: 1px solid #f7df22;
+    padding: 1px 10px;
+    color:white;
+}
+#boardTable{
+    top: 100px;
+    left: 150px;
+    position: absolute;
+    margin-left: 27%;
+}
+#cheat{
+    border-top: 6px solid rgb(136, 65, 91);
+    border-bottom: 6px solid rgb(136, 65, 91);
+    color: rgb(136, 65, 91);
+    font-size: 15pt;
+}
+#ladder1{
+    width: 58px;
+    transform: rotate(32deg);
+    filter: hue-rotate(26deg);
+    left: 245px;
+    top: 319px;
+    position: absolute;
+    margin-left: 27%;
+}
+#ladder2{
+    width: 56px;
+    transform: rotate(133deg);
+    overflow: hidden;
+    filter: hue-rotate(26deg);
+    left: 362px;
+    top: 166px;
+    position: absolute;
+    clip: rect(111px,60px,200px,0px);
+    margin-left: 27%;
+}
+#ladder3{
+    width: 63px;
+    transform: rotate(180deg);
+    overflow: hidden;
+    filter: hue-rotate(26deg);
+    left: 492px;
+    top: 429px;
+    position: absolute;
+    clip: rect(84px,60px,200px,0px);
+    margin-left: 27%;
+}
+
+#ladder4{
+    width: 77px;
+    height: 279px;
+    transform: rotate(211deg);
+    overflow: hidden;
+    filter: hue-rotate(26deg);
+    left: 408px;
+    top: 160px;
+    position: absolute;
+    margin-left: 27%;
+}
+#ladder5{
+    width: 72px;
+    height: 224px;
+    transform: rotate(200deg);
+    overflow: hidden;
+    filter: hue-rotate(26deg);
+    left: 154px;
+    top: 102px;
+    position: absolute;
+    clip: rect(58px,60px,200px,0px);
+    margin-left: 27%;
+}
+#snake1{
+    width: 205px;
+    transform: rotate(7deg);
+    filter: contrast(0.5);
+    left: 400px;
+    top: 133px;
+    position: absolute;
+    margin-left: 27%;
+}
+#snake2{
+    width: 99px;
+    transform: rotate(-14deg);
+    filter: contrast(0.5);
+    left: 330px;
+    top: 505px;
+    position: absolute;
+    margin-left: 27%;
+}
+#snake3{
+    width: 118px;
+    transform: rotate(44deg);
+    filter: contrast(0.5);
+    left: 223px;
+    top: 145px;
+    position: absolute;
+    margin-left: 27%;
+}
+#snake4{
+    width: 177px;
+    transform: rotate(-17deg);
+    filter: contrast(0.5);
+    left: 243px;
+    top: 343px;
+    position: absolute;
+    margin-left: 27%;
+}
+#snake5{
+    width: 111px;
+    transform: rotate(-2deg);
+    filter: contrast(0.5);
+    left: 374px;
+    top: 277px;
+    position: absolute;
+    margin-left: 27%;
+}
+#playGround{
+    display: none;
+}
+#timer{
+    color: black;
+    font-size: 32pt;
+}
+
+h1{
+    color: rgb(136, 65, 91);;
+}
+body{
+    font-family: 'Bree Serif', serif !important;
+    background-color: rgb(136, 65, 91);
+}
+button{
+    font-family: 'Bree Serif', serif !important;
+}
+.container{
+    text-align: center;
+    margin-top: 203px;
+}
+.margin20{
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.homeBtn{
+    background-color: transparent; 
+    border: solid 4px #f7df22;
+    font-size: 20pt;
+    color:white;
+}
+.gamePageBtn{
+    background-color: transparent; 
+    border: solid 4px #edf7bf;
+    font-size: 20pt;
+    color:white;
+}
+.margin40{
+    margin-left:40%;
+}
+.leftContainer{
+    float: left;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 13%;
+}
+.squareOdd{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: rgb(175, 44, 187);
+    border: 1px solid #b357ba;
+}
+.squareEven{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: rgb(29, 124, 233);
+    border: 1px solid #1d7ce9;
+}
+.lastSquare{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #edf7bf;
+    border: 1px solid #edf7bf;
+}
+.player{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #eef9bf;
+    border: 3px dotted red;
+}
+.number{
+    color:wheat;
+}
+.lastNumber{
+    color: #87415b;
+    font-size: larger;
+}
+.newsContainer{
+    background-color: #eef9bf;
+    width: 300px;
+    height: 140px;
+    margin-left: 68%;
+    text-align: center;
+    color: #6a8caf
+}
+.timeContainer{
+    margin-top: 89px;
+    background-color: #eef9bf;
+    width: 300px;
+    height: 140px;
+    margin-left: 68%;
+    text-align: center;
+    color: #6a8caf
+}
+.diceBtn{
+    display: block;
+    margin-bottom: 7%;
+}
+
+
+
+
+/*START: style for dark mode */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: rgb(136, 65, 91);
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px rgb(136, 65, 91);
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 34px;
+}
+.slider.round:before {
+    border-radius: 50%;
+}
+/*END: style for dark mode */
+
+
+
+
+
+/*START : style for blinking snakes and ladders */
+.blinking {
+    -moz-animation: blink normal .5s infinite ease-in-out; 
+    animation: blink normal .5s infinite ease-in-out; 
+    animation-iteration-count: 3;
+}
+ 
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+ 
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/*END: style for blinking snakes and ladders */
+ 

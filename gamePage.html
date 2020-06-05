@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster+Two&display=swap" rel="stylesheet">
+    </head>
+    <body id="body">
+        <div id="modeContainer">
+            <a id="modeText">
+                Dark Mode : 
+            </a>
+            <label class="switch">
+                <input id="darkMode" type="checkbox" onclick="checkDarkMode()">
+                <span class="slider round"></span>
+            </label>
+        </div>
+        <div id="cheatContainer">
+            <a id="cheat">
+                Double click for Cheats!
+            </a>
+        </div>
+        <form id="backToHome" method="get" action="index.html">
+            <button class="gamePageBtn" type="submit"> < Home </button>
+            &nbsp;
+            <button class="gamePageBtn" type="reset" onclick="restart()"> Restart Game </button>
+        </form>
+        
+        <div class="leftContainer">
+            <button class="gamePageBtn" id="diceBtn" onclick="rollDice()"> -Roll Dice!-  </button>
+            <br>
+            <a id="diceNumber"></a>
+            <br>
+            <img id="dice" src="">
+        </div>
+        
+        <!-- START : section for drawing board, ladders and snakes -->
+        <div id="playGround">
+            <div id="boardTable">
+            </div>
+            <img id="ladder1" src="img/ladder.png">
+            <img id="ladder2" src="img/ladder.png">
+            <img id="ladder3" src="img/ladder.png">
+            <img id="ladder4" src="img/ladder.png">
+            <img id="ladder5" src="img/ladder.png">
+            <img id="snake1" src="img/snake.png">
+            <img id="snake2" src="img/snake.png">
+            <img id="snake3" src="img/snake.png">
+            <img id="snake4" src="img/snake.png">
+            <img id="snake5" src="img/snake.png">
+        </div>
+        <!-- END : section for drawing board, ladders and snakes -->
+        
+        <div class="timeContainer">
+            <h1>
+                Time
+            </h1>
+            <div id="time">
+                <a id="timer"></a>
+            </div>
+        </div>
+        <button class="gamePageBtn margin40" id="startbutton"> Click to Start! </button> 
+        <div class="newsContainer">
+            <h1>
+                News
+            </h1>
+            <div id="news">
+                asd
+            </div>
+        </div>
+    </body>
+    <script src="index.js"></script>
+</html>
