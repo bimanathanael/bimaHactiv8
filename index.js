@@ -148,6 +148,8 @@ function rollDice(){
         //check if player steps left to finish is less than rolled dice 
         if((dotPlayer.position + dice) > 89 ){
             alert("cannot move, Roll the Dice again ma bro");
+            newsText = `<a>Rolled Dice need LESS or EQUAL than steps left</a>`;
+            document.getElementById("news").innerHTML = newsText ;
         }
         else{
             dotPlayer.position += dice;
@@ -290,8 +292,6 @@ function scanPosition(){
             };
         };
     });
-    console.log( newsText)
-    console.log(document.getElementById("news").innerHTML)
     document.getElementById("news").innerHTML = newsText
 
     //if player not in position ladders and snakes, draw position base on roller dice (rollDice())
@@ -311,6 +311,9 @@ function scanPosition(){
 
             //stop timer 
             clearInterval(interval);
+
+            newsText = `<a>Congratulation You WIN!</a>`;
+            document.getElementById("news").innerHTML = newsText ;
         };
     };
 };
@@ -345,6 +348,10 @@ bodyTag.addEventListener("keypress", function(e){
 
         //clear timer and interval aswell
         clearInterval(interval);
+
+        newsText = `<a>Congratulation You WIN!</a>`;
+        document.getElementById("news").innerHTML = newsText ;
+
     }
     if(temp.includes("STRONGLIKEHULK")){
         alert("CHEAT ENABLED")
